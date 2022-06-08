@@ -4,14 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Weather Dashboard</title>
 </head>
     <body>
         <div class="container">
-            <div class="row">
+            <div class="row navbar navbar-dark bg-secondary">
                 <div class="col-12 text-center">
                     <h1>Weather Dashboard</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 bg-light pb-2 pt-3" id="searchResults">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4>Search for a City:</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="input-group">
+                        <input class="form-control" type="text" id="enterCity" placeholder="Enter a city">
+                        <button type="button" id="searchBtn" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                    </div>
                 </div>
             </div>
 
