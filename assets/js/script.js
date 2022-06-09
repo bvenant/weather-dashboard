@@ -67,14 +67,14 @@ var displayWeather = function(weather, searchCity) {
 
     currrentWeather.appendChild(temperature, humid, windSpeed);
 
-    var latitude = weather.coord.latitude;
-    var longitude = weather.coord.longitude;
-    uvIndex(latitude, longitude);
+    var lat = weather.coord.lat;
+    var lon = weather.coord.lon;
+    uvIndex(lat, lon);
 };
 
 // Latitude and Longitute
-var uvIndex = function(latitude, longitude) {
-    var futureURL = `https://api.openweathermap.org/data/2.5/uvi?appid=${apiKey}&latitude=${latitude}&longitude=${longitude}`
+var uvIndex = function(lat, lon) {
+    var futureURL = `https://api.openweathermap.org/data/2.5/uvi?appid=${apiKey}&lat=${lat}&lon=${lon}`;
     fetch(futureURL)
     .then(function(response) {
         response.json().then(function(data) {
