@@ -9,7 +9,7 @@
     <title>Weather Dashboard</title>
 </head>
 <body>
-    <header class = "bg-dark text-white text-center p-2">
+    <header class = "bg-secondary text-white text-center p-2">
         <h1>Weather Dashboard</h1>
     </header>
     <div class="container-fluid">
@@ -18,9 +18,9 @@
                 <form class="border p-2" id="city-form">
                     <h4>Search for a City</h2>
                     <input id="city" type="text" autofocus="true" class="form-input"/>
-                    <button class="btn btn-primary" type="submit">Search</button>
+                    <button class="btn btn-danger" type="submit">Search</button>
                 </form>
-                <div class="past-search border" id="past-search-buttons"></div>
+                <div class="past-search border" id="searchList"></div>
             </div>
             <div class="col-12 col-md-9">
                 <div class="row border selected-city" id="current-forecast">
@@ -31,7 +31,7 @@
                 </div>
                 <div class="row border" id="five-day-forecast">
                         <h2 class="col-12" id="forecast"></h2>
-                        <div class="d-flex" id="fiveday-container"></div>
+                        <div class="d-flex" id="fiveDay"></div>
                 </div>  
             </div>
         </div>
