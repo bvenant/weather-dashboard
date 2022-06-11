@@ -1,7 +1,7 @@
 var cityForm = document.querySelector("#city-form");
 var cityInput = document.querySelector("#city");
 var currrentWeather = document.querySelector("#current-weather");
-var searchedCity = document.querySelector("#searched-city");
+var cityInputSearch = document.querySelector("#searched-city");
 var forecast = document.querySelector("#forecast");
 var searchList = document.querySelector("#searchList");
 var fiveDayCon = document.querySelector("#fiveDay");
@@ -43,15 +43,15 @@ var cityWeather = function(city) {
 // Display current weather and creating elements
 var displayWeather = function(weather, searchCity) {
     currrentWeather.textContent = "";
-    cityInput.textContent = searchCity;
+    cityInputSearch.textContent = searchCity;
 
     var currentDay = document.createElement("span")
     currentDay.textContent=" (" + moment(weather.dt.value).format("MMM D, YYYY") + ") ";
-    cityInput.appendChild(currentDay);
+    cityInputSearch.appendChild(currentDay);
 
     var icons = document.createElement("img")
     icons.setAttribute("src", `https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`);
-    cityInput.appendChild(icons);
+    cityInputSearch.appendChild(icons);
 
     var temperature = document.createElement("span");
     temperature.textContent = "Temperature: " + weather.main.temp + " °F";
