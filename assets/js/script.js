@@ -119,8 +119,8 @@ var fiveDay = function(city) {
 
 // Five day forecast
 var displayFiveDay = function(weather) {
-    forecast.textContent = "";
-    fiveDayCon.textContent = "5 Day Forcast:"
+    fiveDayCon.textContent = "";
+    forecast.textContent = "5 Day Forcast:"
 
     var currForecast = weather.list;
     for(var i=5; i < currForecast.length; i = i + 8) {
