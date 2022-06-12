@@ -65,11 +65,15 @@ var displayWeather = function(weather, searchCity) {
     windSpeed.textContent = "Wind Speed: " + weather.wind.speed + " MPH";
     windSpeed.classList = "list-group-item"
 
-    currrentWeather.appendChild(temperature, humid, windSpeed);
+    currrentWeather.appendChild(temperature);
+
+    currrentWeather.appendChild(humid);
+
+    currrentWeather.appendChild(windSpeed);
 
     var lat = weather.coord.lat;
     var lon = weather.coord.lon;
-    uvIndex(lat, lon);
+    uvIndex(lat,lon);
 };
 
 // Latitude and Longitute
@@ -103,7 +107,7 @@ var uvIndexDisplay = function(index) {
 
     uvIndexEl.appendChild(uvValue);
 
-    currrentWeather.appendChild(uvValue);
+    currrentWeather.appendChild(uvIndexEl);
 };
 
 var fiveDay = function(city) {
