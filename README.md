@@ -27,7 +27,7 @@ THEN I am again presented with current and future conditions for that city
 
 ### Usage  
 
-![My Image](./assests/)
+![My Image](./assets/weather.png)
 
 
 - - -  
