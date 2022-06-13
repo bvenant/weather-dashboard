@@ -35,6 +35,6 @@ THEN I am again presented with current and future conditions for that city
 ### Links  
  
 
-[Weather Dashboard Website](https://bvenant.github.io/)  
+[Weather Dashboard Website](https://bvenant.github.io/weather-dashboard/)  
 
 [Weather Dashboard Repository](https://github.com/bvenant/weather-dashboard)
